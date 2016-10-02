@@ -14,3 +14,20 @@
       {{errorMessage}}
     </section>
 </section>
+
+<section>
+  <section *ngIf="isBookLoading && !errorMessage">
+    Loading our books!!! Retrieving data...
+  </section>
+  <ul>
+    <!-- this is the new syntax for ng-repeat -->
+    <li *ngFor="let book of books">
+      <span>
+        {{book.tagName}}
+      </span>
+    </li>
+  </ul>
+  <section *ngIf="errorMessage">
+    {{errorMessage}}
+  </section>
+</section>

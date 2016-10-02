@@ -7,7 +7,7 @@ import {Book} from "../model/book";
 @Injectable()
 export class BookService {
 
-  private baseUrl:string = 'http://localhost:8080/api/';
+  private baseUrl:string = 'http://192.168.1.103:8080/api/';
 
   constructor(private http:Http) {
   }
